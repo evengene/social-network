@@ -1,0 +1,42 @@
+.sidebar {
+    flex-basis: 20%;
+    border-right: 1px solid lightgray;
+}
+
+p {
+    color: grey;
+    font-weight: 600;
+}
+.nav-link {
+    color: lightgrey;
+    font-weight: 600;
+}
+
+.sidebar-wrapper .nav-link {
+    padding: 1.5rem 1rem;
+}
+.sidebar-wrapper .nav-link:hover {
+    color: #5FCF8C;
+}
+
+.sidebar-wrapper .nav-link:active {
+    color: #5FCF8C;
+}
+
+.nav-link.active {
+    color: #5FCF8C;
+}
+
+.sidebar-wrapper {
+    margin: 50px auto;
+}
+
+.icon {
+    margin-right: 14px;
+    color: lightgray;
+}
+
+.icon.active,
+.icon:hover {
+    color: #5FCF8C;
+}

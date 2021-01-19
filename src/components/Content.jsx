@@ -1,26 +1,25 @@
 import React from "react";
-import {Container, Row} from "react-bootstrap";
-
+import Profile from "./profile/Profile";
+import Dialogs from "./messages/Dialogs";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 function MainContent() {
 
     return (
         <>
-            <div className="main-content">
-            <Container>
-                <Row>
-                    <div>
-                        <div>
 
-                        </div>
-                        <div>
-                            text paragraph
-                        </div>
+            <Router>
+                <div className="main-content">
+                    <Route path="/profile">
+                        <Profile/>
+                    </Route>
+                    <Route path="/messages">
+                     <Dialogs/>
+                    </Route>
 
-                    </div>
-                </Row>
-            </Container>
-            </div>
+
+                </div>
+            </Router>
         </>
     )
 }

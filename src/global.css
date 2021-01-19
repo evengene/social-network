@@ -1,0 +1,31 @@
+p {
+   color: #464646;
+   font-weight: 400;
+}
+
+.flexed {
+   display: flex;
+}
+
+.main-content {
+   margin: 0 auto 0 50px;
+   flex-basis: 80%;
+}
+
+section {
+   padding: 30px 0;
+}
+
+button.btn-primary {
+   background-color: #5FCF8C;
+   border-color: #5FCF8C;
+}
+button.btn-primary:hover,
+button.btn-primary:focus {
+   background-color: #57ba7f;
+   border-color: #57ba7f;
+}
+
+a:hover {
+   color: #5FCF8C !important;
+}
