@@ -5,6 +5,7 @@ p {
 
 .flexed {
    display: flex;
+   height: calc(100vh - 56px);
 }
 
 .main-content {

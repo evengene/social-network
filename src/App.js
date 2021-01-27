@@ -5,13 +5,15 @@ import "./global.css"
 import Header from "./components/Header";
 import MainContent from "./components/Content";
 
-function App() {
+function App({state}) {
     return (
         <div>
             <Header/>
             <div className="flexed">
                 <Sidebar/>
-                <MainContent/>
+                <MainContent dialogsData={state.messagesPage.dialogsData}
+                             messagesData={state.messagesPage.messagesData}
+                             postData={state.profilePage.postData}/>
             </div>
         </div>
     );

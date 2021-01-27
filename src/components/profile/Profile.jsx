@@ -3,13 +3,13 @@ import MyPosts from "./sections/Posts";
 import NewPost from "./sections/NewPost";
 import ProfileInfo from "./sections/ProfileInfo";
 
-function Profile() {
+function Profile({postData}) {
 
     return (
         <>
             <ProfileInfo/>
             <NewPost/>
-            <MyPosts />
+            <MyPosts postData={postData}/>
         </>
     )
 }

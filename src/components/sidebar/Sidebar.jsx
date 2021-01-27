@@ -20,11 +20,13 @@ function Sidebar () {
                         <Nav activeKey="/home" className="flex-column" onSelect={(selectedKey) => {
 
                         }}>
-                            {/*<img src='/static/images/logo192.png'/>*/}
+
                             <p>Account</p>
 
                             <Nav.Link href="/profile/" eventKey="link-0" active={currentPath == '/profile/'}>
-                                <span className="icon"><FontAwesomeIcon icon={faUser}/></span>
+                                <span className="icon">
+                                    <FontAwesomeIcon icon={faUser}/>
+                                </span>
                                 Profile
                             </Nav.Link>
                             {/*<input type="text" readOnly="readonly" value={currentUrl} />*/}
@@ -32,9 +34,10 @@ function Sidebar () {
                             <Nav.Link href="/messages/" eventKey="link-1" active={currentPath == '/messages/'}>
                                 <span className="icon">
                                     <FontAwesomeIcon icon={faEnvelope}/>
-                                </span>Messages
+                                </span>
+                                Messages
                             </Nav.Link>
-                            <Nav.Link eventKey="link-2">News</Nav.Link>
+                            <Nav.Link eventKey="link-2">Friends</Nav.Link>
                             <Nav.Link eventKey="link-3">Music</Nav.Link>
                         </Nav>
                     </div>
