@@ -1,3 +1,5 @@
+import rerenderEntireDom from "../render";
+
 let state = {
     profilePage: {
         postData: [
@@ -103,6 +105,6 @@ export let addPost = (postMessage) => {
     }
     //add this object to our posts:
     state.profilePage.postData.push(sampleObject)
-    rerenderEntireDom();
+    rerenderEntireDom(state);
 }
 

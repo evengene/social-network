@@ -6,8 +6,9 @@ function NewPost({addPost}) {
 
     const handleClick = ()=> {
         let inputValue = refLink.current.value;
-        alert(`inside textarea: ${inputValue}`);
-        addPost('we added a post inside the function');
+        // alert(`inside textarea: ${inputValue}`);
+        addPost(inputValue);
+        refLink.current.value = ""
     }
 
     const refLink = React.createRef();
