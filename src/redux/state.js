@@ -1,3 +1,11 @@
+/**
+ State component
+
+ contains data and functions to control state
+ passes state through props to other components
+
+ */
+
 import rerenderEntireDom from "../render";
 
 let state = {
