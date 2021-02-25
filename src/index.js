@@ -5,16 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import state, {addPost} from './redux/state'
-
-
-let rerenderEntireDom = () = {
-    ReactDOM.render(
-        <React.StrictMode>
-            <App state={state} addPost={addPost}/>
-        </React.StrictMode>,
-        document.getElementById('root');
-
-}
+import rerenderEntireDom from "./render"
 
 rerenderEntireDom();
 
