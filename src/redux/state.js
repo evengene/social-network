@@ -1,4 +1,25 @@
 let state = {
+    profilePage: {
+        postData: [
+            {
+                m: 'Fall\'s best meteor shower to peak on Tuesday night\n',
+                like: '3',
+                dislike: '0',
+                date: '01.01.2022'
+            }, {
+                m: 'Scientists clock the fastest interval of time in \'zeptoseconds\'',
+                like: '5',
+                dislike: '2',
+                date: '01.08.2022'
+            },
+            {
+                m: 'Alexey is my superhero',
+                like: '30',
+                dislike: '0',
+                date: '18.01.2021'
+            },
+        ]
+    },
     messagesPage: {
         dialogsData: [
             {
@@ -68,28 +89,20 @@ let state = {
             }
         ],
     },
-    profilePage: {
-        postData: [
-            {
-                m: 'Fall\'s best meteor shower to peak on Tuesday night\n',
-                like: '3',
-                dislike: '0',
-                date: '01.01.2022'
-            }, {
-                m: 'Scientists clock the fastest interval of time in \'zeptoseconds\'',
-                like: '5',
-                dislike: '2',
-                date: '01.08.2022'
-            },
-            {
-                m: 'Alexey is my superhero',
-                like: '30',
-                dislike: '0',
-                date: '18.01.2021'
-            },
-        ]
-    }
-
 }
 
 export default state
+
+export let addPost = (postMessage) => {
+
+    const sampleObject = {
+        m: postMessage,
+        like: '0',
+        dislike: '0',
+        date: '18.12.12'
+    }
+    //add this object to our posts:
+    state.profilePage.postData.push(sampleObject)
+    rerenderEntireDom();
+}
+

@@ -30,7 +30,6 @@ function Sidebar () {
                                 Profile
                             </Nav.Link>
                             {/*<input type="text" readOnly="readonly" value={currentUrl} />*/}
-
                             <Nav.Link href="/messages/" eventKey="link-1" active={currentPath == '/messages/'}>
                                 <span className="icon">
                                     <FontAwesomeIcon icon={faEnvelope}/>

@@ -5,7 +5,8 @@ import "./global.css"
 import Header from "./components/Header";
 import MainContent from "./components/Content";
 
-function App({state}) {
+function App({state, addPost}) {
+
     return (
         <div>
             <Header/>
@@ -13,7 +14,7 @@ function App({state}) {
                 <Sidebar/>
                 <MainContent dialogsData={state.messagesPage.dialogsData}
                              messagesData={state.messagesPage.messagesData}
-                             postData={state.profilePage.postData}/>
+                             postData={state.profilePage.postData} addPost={addPost}/>
             </div>
         </div>
     );

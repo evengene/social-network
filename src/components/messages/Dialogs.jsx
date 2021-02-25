@@ -50,6 +50,12 @@ function Dialogs({dialogsData, messagesData}) {
     let dialogElements = dialogsData.map(person => <People name={person.name} id={person.id}/>)
     let messageElements = messagesData.map(message => <Chat message={message.name} styling={message.float}/>)
 
+    let textAriaRef = React.createRef();
+    const handleSend =()=> {
+
+        alert(`input text is: ${textAriaRef.current.value}`)
+    }
+
     return (
         <>
             <section className="dialogs-section">
@@ -71,9 +77,10 @@ function Dialogs({dialogsData, messagesData}) {
                                             placeholder="Enter your message here"
                                             aria-label="Enter your message here"
                                             aria-describedby="basic-addon2"
+                                            ref={textAriaRef}
                                         />
                                         <InputGroup.Append>
-                                            <Button variant="primary">Send</Button>
+                                            <Button variant="primary" onClick={handleSend}>Send</Button>
                                         </InputGroup.Append>
                                     </InputGroup>
                                 </div>
